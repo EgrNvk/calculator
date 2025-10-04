@@ -22,9 +22,13 @@ class Calculator:
         return
 
     def division(self):
-        result = self.number1 / self.number2
-        print(f"{self.number1} / {self.number2} = {result}")
-        return
+        if self.number2 == 0:
+            print("На 0 ділити не можна")
+            return
+        else:
+            result = self.number1 / self.number2
+            print(f"{self.number1} / {self.number2} = {result}")
+            return
 
 while True:
     number1=input("Введіть перше число - ")
